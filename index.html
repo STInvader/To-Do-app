@@ -12,19 +12,24 @@
 </head>
 <body>
     <!--Sidebar-->
-    <div class="side-bar">
+    <div class="side-bar" id="side-bar">
         <div class="name">
-            <p id="greeting">Sonit</p>
-            <button id="image-button">
-                <img src="images/Collapse.png" alt="Collapse the bar" style="width: 40px; height: 100%; border: 0;">
-            </button>
+            <p id="greeting" class="to-be-hidden">Sonit</p>
+            <div id="the-div">            
+                <button id="image-button">
+                <img src="images/Collapse.png" alt="Collapse the bar" style="width: 40px; height: 100%; border: 0;" id="image">
+                </button>
+            </div>
+
         </div>
-        <div class="options">
+
+        <div id="options" class="to-be-hidden">
             <div class="options-item" id="Add-task"> <p>Add Task</p> </div>
             <div class="options-item"> <p>My Day</p> </div>
             <div class="options-item"> <p>Inbox</p> </div>
         </div>
     </div>
+
     <script src="sidebar.js"></script>
     <!--Main Window-->
 </body>
